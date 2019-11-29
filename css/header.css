@@ -1,0 +1,377 @@
+/*HEADER*/
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/boat-in-mouvement.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 65%;
+  background-size: auto 100vh;
+  overflow: hidden;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 25%;
+  align-self: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 3px 0px 6px rgba(0, 0, 0, 0.9), -3px 0px 6px rgba(0, 0, 0, 0.9),
+    0px 3px 6px rgba(0, 0, 0, 0.9), 0px -3px 6px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s 0.5s;
+}
+
+.slogan.is-grown {
+  opacity: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-tesla {
+  position: fixed;
+  top: -3%;
+  left: 5%;
+  width: 90px;
+  height: 60px;
+}
+
+.logo-tesla img {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 50px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: left 0.5s, top 0.5s, width 0.5s, height 0.5s;
+}
+
+.is-open {
+  width: 100vh;
+  height: 100vh;
+}
+
+.open-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  top: 5px;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+}
+
+.menu-icon {
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  width: 30px;
+  height: 4px;
+  background: white;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+  transition: transform 0.3s;
+}
+
+.menu-icon::before {
+  transform: translateY(-8px);
+}
+
+.menu-icon::after {
+  transform: translateY(4px);
+}
+
+.is-open .menu-icon {
+  background-color: transparent;
+}
+
+.is-open .menu-icon::before {
+  transform: translateY(2px) rotate(45deg);
+  background-color: black;
+}
+
+.is-open .menu-icon::after {
+  transform: translateY(-2px) rotate(-45deg);
+  background-color: black;
+}
+
+.menu-list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  transform: translate(40vw, calc(-50vh + 40px)) scale(0);
+  opacity: 0;
+  transition: transform 0.5s;
+}
+
+.is-open .menu-list {
+  transform: none;
+  opacity: 1;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+.menu-items {
+  font-style: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  color: #000;
+  border-bottom: 1px solid #c4c4c4;
+  width: 50%;
+  text-align: center;
+}
+.menu-items:hover {
+  cursor: pointer;
+}
+.lien-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-arch {
+  position: absolute;
+  width: 60%;
+  min-width: 480px;
+  top: 10%;
+  align-self: center;
+}
+
+.buy-button {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  padding-top: 8px;
+  width: 60%;
+  min-width: 300px;
+  max-width: 400px;
+  height: 50px;
+  bottom: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 6px solid white;
+  letter-spacing: 5px;
+}
+
+.buy-button a {
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 10px;
+  height: 40px;
+}
+
+.buy-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.buy-button:hover a {
+  width: 100%;
+  color: black;
+}
+
+.buy-button-header {
+  display: none;
+  align-self: center;
+  position: fixed;
+  width: 30%;
+  min-width: 94px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 4px solid white;
+  top: 15px;
+  left: 40%;
+  z-index: 1;
+  padding: 5px 0;
+}
+
+.buy-button-header.pop {
+  display: flex;
+}
+.buy-button-header a {
+  margin: auto;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: 0.7em;
+}
+
+.buy-button-header:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.buy-button-header:hover a {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+@media screen and (min-width: 400px) {
+  .buy-button {
+    letter-spacing: 10px;
+  }
+
+  .buy-button-header a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .buy-button-header a {
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-tesla {
+    top: -2.5%;
+  }
+
+  .header-wrapper {
+    position: fixed;
+  }
+
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .is-open {
+    height: 50px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-list {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 1;
+    transform: none;
+    top: -25px;
+    margin-left: 20%;
+  }
+
+  .menu-list.open-close {
+    z-index: 2;
+  }
+  .menu-list.is-hidden {
+    display: none;
+  }
+
+  .menu-items {
+    border: none;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    padding-top: 0;
+  }
+  .menu-items a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-weight: lighter;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+  }
+
+  .menu-list .menu-items:nth-child(-n + 3) {
+    border-right: 1px solid white;
+  }
+
+  .is-open .menu-list {
+    opacity: 1;
+    background: none;
+  }
+
+  .lien-menu {
+    color: white;
+  }
+
+  .buy-button-header {
+    width: 25%;
+    min-width: 221px;
+    left: 65%;
+    height: 35px;
+    top: 10px;
+  }
+
+  .buy-button-header a {
+    letter-spacing: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-size: 100%;
+  }
+}
