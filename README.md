@@ -1,15 +1,26 @@
-# hetic-w1p2022-01 Projet Semaine Intensive Intégration
+# hetic-w1p2022-01
 
-Membres du groupe :
-
-<ul>
-  <li>Bastien Paquier</li>
-  <li>Constance Pétillot</li>
-  <li>Guillaume Rak-Lecler</li>
-  <li>Quentin Trouvé</li>
-  <li>Annie Tran</li>
-  <li>Michael Vieira</li>
-  <li>Nathan Stampfli</li>
-</ul>
+<b>"Choisir une marque, créer un nouveau produit et développer un site internet vitrine"</b>
 
 Lien du site Netlify : https://arch-e-mede.netlify.com/
+
+- Contributeurs :
+
+  - Quentin TROUVE
+  - Bastien PAQUIET
+  - Constance PETILLOT
+  - Guillaume RAK-LECLERC
+  - Annie TRAN
+  - Michaël VIEIRA
+  - Nathan STAMPFLI
+
+- Temps imparti : 
+
+  - 4 jours de conception
+  - 15 minutes de soutenance orale
+
+- Obligations :
+
+  - Intégration responsive (Mobile First)
+  - Une homepage et deux pages articles
+  - Formulaire de commande
