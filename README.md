@@ -1,11 +1,10 @@
-<h1>Semaine Intensive - Tesla Arch-e-mede</h1>
+# ARCH-E-MEDE
 
-<h2>"Choisir une marque, créer un nouveau produit et développer un site internet vitrine"</h2>
+ ___"Création d'un nouveau produit pour une marque existante"___
+ 
+ ![Arche-e-mede](src/img/Gif/archemede.gif)
 
-Lien du site Netlify : https://arch-e-mede.netlify.com/
-
-- Contributeurs :
-
+## Membres :
   - Quentin TROUVE
   - Bastien PAQUIET
   - Constance PETILLOT
@@ -13,14 +12,24 @@ Lien du site Netlify : https://arch-e-mede.netlify.com/
   - Annie TRAN
   - Michaël VIEIRA
   - Nathan STAMPFLI
+  
+## Caractéristiques :
+
+- Thème : 
+  - Marque : TESLA
+  - Produit : Bateau
+  
+- Support : 
+  - Desktop / Mobile
 
 - Temps imparti : 
-
   - 4 jours de conception
   - 15 minutes de soutenance orale
-
-- Obligations :
-
+  
+- Cahier des charges :
   - Intégration responsive (Mobile First)
   - Une homepage et deux pages articles
   - Formulaire de commande
+
+## Page web 
+[arch-e-mede.netlify.com](https://arch-e-mede.netlify.app/)
