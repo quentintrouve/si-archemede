@@ -2,7 +2,7 @@
 
  ___"Création d'un nouveau produit pour une marque existante"___
  
- ![Arche-e-mede](src/img/Gif/archemede.gif)
+ ![Arche-e-mede](img/Gif/archemede.gif)
 
 ## Membres :
   - Quentin TROUVE
