@@ -1,35 +1,44 @@
 # ARCH-E-MEDE
 
- ___"Création d'un nouveau produit pour une marque existante"___
- 
- ![Arche-e-mede](img/Gif/archemede.gif)
+## 🎓Disclaimer
 
-## Membres :
-  - Quentin TROUVE
-  - Bastien PAQUIET
-  - Constance PETILLOT
-  - Guillaume RAK-LECLERC
-  - Annie TRAN
-  - Michaël VIEIRA
-  - Nathan STAMPFLI
-  
-## Caractéristiques :
+This site has been created for educational purposes as part of the Bachelor's curriculum of the HETIC school. The contents presented have not been the subject of a request for right of use. **This site will and should in no case be used for commercial purposes and will not be published.**
 
-- Thème : 
-  - Marque : TESLA
-  - Produit : Bateau
-  
-- Support : 
-  - Desktop / Mobile
+## 🚤 Project Overview
+<p align="center">
+  <img src="img/Gif/archemede.gif">
+</p>
 
-- Temps imparti : 
-  - 4 jours de conception
-  - 15 minutes de soutenance orale
-  
-- Cahier des charges :
-  - Intégration responsive (Mobile First)
-  - Une homepage et deux pages articles
-  - Formulaire de commande
+**ARCH-E-MEDE** is a new concept of electric boat imagined for the Tesla brand. The subject of this school work was to create a new product for an existing brand and to code the landing page. This page is made respecting the Mobile First development. It integrates a pre-order form, two article pages and scroll animations.
 
-## Page web 
-[arch-e-mede.netlify.com](https://arch-e-mede.netlify.app/)
+## 🚀 Getting Started
+
+### Live demo
+
+Website is deployed [here](https://arch-e-mede.netlify.app/)
+
+### Installing
+
+Clone the repository
+
+```
+git clone $url
+```
+
+```
+cd si-archemede
+```
+
+```
+open index.html on your browser
+```
+
+## 🔨 Built with
+
+`HTML` - `CSS` - `Javascript`
+
+## 👥 Contributers
+
+Bastien Paquier - [bastien17-dev](https://github.com/bastien17-dev)  
+Guillaume Rackler - [gRAKLECLER](https://github.com/gRAKLECLER)   
+Quentin Trouvé - [quentintrouve](https://github.com/quentintrouve)
