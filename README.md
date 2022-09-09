@@ -9,7 +9,7 @@ This site has been created for educational purposes as part of the Bachelor's cu
   <img src="img/Gif/archemede.gif">
 </p>
 
-**ARCH-E-MEDE** is a new concept of electric boat imagined for the Tesla brand. The subject of this school work was to create a new product for an existing brand and to code the landing page. This page is made respecting the Mobile First development. It integrates a pre-order form, two article pages and scroll animations.
+**ARCH-E-MEDE** is a new concept of electric boat imagined for the Tesla brand. The subject of this school work was to create a new product for an existing brand and to code the landing page. This page is made respecting the **Mobile First development**. It integrates a pre-order form, two article pages and scroll animations.
 
 ## 🚀 Getting Started
 
