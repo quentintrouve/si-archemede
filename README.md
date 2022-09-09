@@ -1,6 +1,6 @@
 # ARCH-E-MEDE
 
-## 🎓Disclaimer
+## 🎓 Disclaimer
 
 This site has been created for educational purposes as part of the Bachelor's curriculum of the HETIC school. The contents presented have not been the subject of a request for right of use. **This site will and should in no case be used for commercial purposes and will not be published.**
 
